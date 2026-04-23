@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "RCa716hsPatHBmMAgOTY+Rpa/8Kdpzx/XYZYGQoYWao=",
+  "Source": "ClinicaAPI",
+  "BasePath": "_content/ClinicaAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClinicaAPI\\wwwroot",
+      "Source": "ClinicaAPI",
+      "ContentRoot": "C:\\Users\\kathe\\source\\repos\\ClinicaAPI\\ClinicaAPI\\wwwroot\\",
+      "BasePath": "_content/ClinicaAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kathe\\source\\repos\\ClinicaAPI\\ClinicaAPI\\wwwroot\\index.html",
+      "SourceId": "ClinicaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kathe\\source\\repos\\ClinicaAPI\\ClinicaAPI\\wwwroot\\",
+      "BasePath": "_content/ClinicaAPI",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "81d19ftd2v",
+      "Integrity": "xLIMQlB1GtKVCw4IWJdSD9oUSNLuoC+r1jbKPsqd60c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.81d19ftd2v.html",
+      "AssetFile": "C:\\Users\\kathe\\source\\repos\\ClinicaAPI\\ClinicaAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xLIMQlB1GtKVCw4IWJdSD9oUSNLuoC+r1jbKPsqd60c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 22:15:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "81d19ftd2v"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xLIMQlB1GtKVCw4IWJdSD9oUSNLuoC+r1jbKPsqd60c="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\kathe\\source\\repos\\ClinicaAPI\\ClinicaAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xLIMQlB1GtKVCw4IWJdSD9oUSNLuoC+r1jbKPsqd60c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 22:15:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xLIMQlB1GtKVCw4IWJdSD9oUSNLuoC+r1jbKPsqd60c="
+        }
+      ]
+    }
+  ]
+}

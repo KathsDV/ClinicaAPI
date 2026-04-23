@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica - Citas Médicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listado de Citas Médicas</h1>
+    <button onclick="cargarCitas()">Actualizar Lista</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Paciente</th>
+                <th>Doctor</th>
+                <th>Fecha y Hora</th>
+                <th>Diagnóstico</th>
+            </tr>
+        </thead>
+        <tbody id="tablaCitas">
+        </tbody>
+    </table>
+
+    <script>async function cargarCitas() {
+            try {
+                // Llamamos a nuestra propia API
+                const respuesta = await fetch('/api/Citas');
+                const citas = await respuesta.json();
+
+                const tbody = document.getElementById('tablaCitas');
+                tbody.innerHTML = ''; // Limpiamos la tabla
+
+                citas.forEach(cita => {
+                    const fila = `<tr>
+                        <td>${cita.id}</td>
+                        <td>${cita.paciente}</td>
+                        <td>${cita.doctor}</td>
+                        <td>${new Date(cita.fechaHora).toLocaleString()}</td>
+                        <td>${cita.diagnostico || 'Pendiente'}</td>
+                    </tr>`;
+                    tbody.innerHTML += fila;
+                });
+            } catch (error) {
+                alert('Error al cargar las citas');
+                console.error(error);
+            }
+        }
+
+        cargarCitas();</script>
+</body>
+</html>
